@@ -1,3 +1,8 @@
-<div [ngClass]="{ 'mzd-timeline-card': card, 'mzd-timeline-border': border }">
+<div [ngClass]="{ 
+    'mzd-timeline-card': card, 
+    'mzd-timeline-border': border && color === 'gray', 
+    'mzd-timeline-border-accent': border && color === 'accent', 
+    'mzd-timeline-border-warn': border && color === 'warn', 
+    'mzd-timeline-border-primary': border && color === 'primary' }">
   <ng-content></ng-content>
 </div>

@@ -1,4 +1,5 @@
 import { Component, ElementRef, Input, OnInit, ViewEncapsulation } from '@angular/core';
+import { ThemePalette } from '@angular/material/core';
 
 @Component({
   selector: 'mzd-timeline-content',
@@ -9,7 +10,8 @@ import { Component, ElementRef, Input, OnInit, ViewEncapsulation } from '@angula
 export class MzdTimelineContentComponent implements OnInit {
 
   @Input() card: boolean = true;
-  @Input() border: boolean = false;
+  @Input() border = false;
+  @Input() color: ThemePalette | 'gray' = 'gray';
 
   set left(value: boolean) {
     this.elementRef.nativeElement.classList.toggle('content-left', value);
