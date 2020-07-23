@@ -1,6 +1,6 @@
 {
   "name": "ngx-rend-timeline",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Fork of mazid1s Minimalist's vertical timeline library for Angular applications.",
   "repository": {
     "type": "git",

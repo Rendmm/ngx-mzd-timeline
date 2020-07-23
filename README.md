@@ -3,13 +3,10 @@
 Angular material theme supported minimalist's vertical timeline library for Angular applications. 
 Forked by me to keep it up to date when I need it and to be able to flexible add updates. Will still post them to original Repo and of they're added  I close this.
 
-## Live Demo
-
-Live demo is available at [github pages](https://mazid1.github.io/ngx-mzd-timeline).
 
 ## Getting Started
 
-1) run `npm install --save ngx-mzd-timeline`
+1) run `npm install --save ngx-rend-timeline`
 2) import `MzdTimelineModule` in your app module
 
 ```typescript
@@ -57,10 +54,22 @@ export class AppModule { }
 
 Border around the content
 
-```xml
+```html
 <mzd-timeline>
   <mzd-icon><fa-icon icon="briefcase"></fa-icon></mzd-icon>
   <mzd-timeline-content [border]="true">
+      Your HTML code or any angular component can be placed here.
+      Content will be displayed in a card.
+  </mzd-timeline-content>
+</mzd-timeline>
+```
+
+Border with material theme color
+
+```html
+<mzd-timeline>
+  <mzd-icon><fa-icon icon="briefcase"></fa-icon></mzd-icon>
+  <mzd-timeline-content [border]="true" [color]="'accent'">
       Your HTML code or any angular component can be placed here.
       Content will be displayed in a card.
   </mzd-timeline-content>
