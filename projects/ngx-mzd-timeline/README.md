@@ -1,10 +1,7 @@
-# ngx-mzd-timeline
+# ngx-rend-timeline
 
-Angular material theme supported minimalist's vertical timeline library for Angular applications.
+Angular material theme supportedmazi1ds vertical timeline library for Angular applications. Forked and added some useful features.
 
-## Live Demo
-
-Live demo is available at [github pages](https://mazid1.github.io/ngx-mzd-timeline).
 
 ## Getting Started
 
@@ -66,9 +63,35 @@ Border around the content
 </mzd-timeline>
 ```
 
+Border with material theme color
+
+```html
+<mzd-timeline>
+  <mzd-icon><fa-icon icon="briefcase"></fa-icon></mzd-icon>
+  <mzd-timeline-content [border]="true" [color]="'accent'">
+      Your HTML code or any angular component can be placed here.
+      Content will be displayed in a card.
+  </mzd-timeline-content>
+</mzd-timeline>
+```
+
+### Fixed Site
+
+If your timelines property alternateSide is true you can fix individual content like this:
+
+```html
+<mzd-timeline [alternateSide]="true">
+  <mzd-icon><fa-icon icon="briefcase"></fa-icon></mzd-icon>
+  <mzd-timeline-content side='right'>
+      Your HTML code or any angular component can be placed here.
+      Content will be displayed in a card.
+  </mzd-timeline-content>
+</mzd-timeline>
+```
+
 ### Other Examples
 
-Other examples can be found in the [app.component.html](https://github.com/mazid1/ngx-mzd-timeline/blob/master/src/app/app.component.html) file.
+Other examples can be found in the [app.component.html](https://github.com/rendmm/ngx-rend-timeline/blob/master/src/app/app.component.html) file.
 
 ## Angular Material Theme
 
@@ -76,7 +99,7 @@ The package supports angular material theme. In your own angular material theme:
 
 ```typescript
 @import '~@angular/material/theming';
-@import "~ngx-mzd-timeline/src/mzd-timeline.theme.scss";
+@import "~ngx-rend-timeline/src/mzd-timeline.theme.scss";
 
 ...
 

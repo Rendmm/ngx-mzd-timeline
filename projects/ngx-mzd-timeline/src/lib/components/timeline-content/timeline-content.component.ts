@@ -12,6 +12,7 @@ export class MzdTimelineContentComponent implements OnInit {
   @Input() card: boolean = true;
   @Input() border = false;
   @Input() color: ThemePalette | 'gray' = 'gray';
+  @Input() side: 'left' | 'right' | undefined = undefined;
 
   set left(value: boolean) {
     this.elementRef.nativeElement.classList.toggle('content-left', value);
