@@ -1,7 +1,7 @@
 # ngx-mzd-timeline
 
 Angular material theme supported minimalist's vertical timeline library for Angular applications. 
-Forked by me to keep it up to date when I need it and to be able to flexible add updates. Will still post them to original Repo and of they're added  I close this.
+Forked by me to keep it up to date when I need it and to be able to flexible add updates. 
 
 
 ## Getting Started
@@ -11,7 +11,7 @@ Forked by me to keep it up to date when I need it and to be able to flexible add
 
 ```typescript
 ...
-import { MzdTimelineModule } from 'ngx-mzd-timeline';
+import { MzdTimelineModule } from 'ngx-rend-timeline';
 
 @NgModule({
   ...
@@ -108,6 +108,7 @@ The package supports angular material theme. In your own angular material theme:
 | ------------------ | ------- | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `alternateSide`    | boolean | true    | If set to true, entries will be displayed alternately (`'left'` / `'right'`). In XS devices, if set ture, contents will be placed at `'right'` side of the vertical line; if set false, content will be placed at `'left'`/`'right'` depending on the value of `firstContentSide`. |
 | `firstContentSide` | string  | 'left'  | Changes side (`'left'` / `'right'`) of the first content is shown on. If `alternateSide` is `false`, all the contents will follow the side of the first content, otherwise contents will take side alternately. No effect in XS devices if `alternateSide` is `true`.              |
+| `chat` | boolean  | false  | Changes the view to a more chat-like view, with a line on each side and the content coming from them. No effect in XS devices or if `alternateSide` is false.              |
 
 ### MzdTimelineContent
 

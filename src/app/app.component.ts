@@ -10,6 +10,7 @@ export class AppComponent {
   title = 'mzd-timeline';
 
   alternateSide: boolean = true;
+  chat = false;
   firstContentSide: 'left' | 'right' = 'left';
 
   constructor(private themeService: ThemeService) { }

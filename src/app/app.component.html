@@ -10,7 +10,9 @@
 <section class="mzd-app-section">
   <mat-checkbox labelPosition="before" [(ngModel)]="alternateSide" class="mzd-app-margin">Alternate side</mat-checkbox>
 </section>
-
+<section class="mzd-app-section">
+  <mat-checkbox labelPosition="before" [(ngModel)]="chat" class="mzd-app-margin">use Chat-View</mat-checkbox>
+</section>
 <section class="mzd-app-section">
   <label id="radio-label" class="mzd-app-margin">First content side:</label>
   <mat-radio-group aria-labelledby="radio-label" [(ngModel)]="firstContentSide">
@@ -19,18 +21,21 @@
   </mat-radio-group>
 </section>
 
-<mzd-timeline [alternateSide]="alternateSide" [firstContentSide]="firstContentSide">
-  
+<mzd-timeline [alternateSide]="alternateSide" [firstContentSide]="firstContentSide" [chat]="chat">
+
   <!-- mzd-timeline-card no-border -->
   <mzd-timeline-content>
     <div>
       <h1>Custom-card with No-border</h1>
       <hr>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tempora dolor ullam exercitationem illum enim id maxime sunt eius, neque repellat corporis atque voluptatibus quasi nam necessitatibus odit commodi quisquam?</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tempora dolor ullam exercitationem illum enim id
+        maxime sunt eius, neque repellat corporis atque voluptatibus quasi nam necessitatibus odit commodi quisquam?</p>
     </div>
-    <mzd-icon><fa-icon icon="briefcase"></fa-icon></mzd-icon>
+    <mzd-icon>
+      <fa-icon icon="briefcase"></fa-icon>
+    </mzd-icon>
   </mzd-timeline-content>
-  
+
   <!-- no-mzd-timeline-card mat-card no-border -->
   <mzd-timeline-content [card]="false">
     <mzd-icon><strong>X</strong></mzd-icon>
@@ -52,7 +57,9 @@
 
   <!-- mzd-timeline-card mat-card mzd-timeline-border -->
   <mzd-timeline-content [card]="true" [border]="true">
-    <mzd-icon><fa-icon icon="camera"></fa-icon></mzd-icon>
+    <mzd-icon>
+      <fa-icon icon="camera"></fa-icon>
+    </mzd-icon>
     <mat-card>
       <mat-card-header>
         <mat-card-title>
@@ -71,41 +78,53 @@
 
   <!-- mzd-timeline-card mzd-timeline-border -->
   <mzd-timeline-content [border]="true">
-    <mzd-icon><fa-icon icon="bell"></fa-icon></mzd-icon>
+    <mzd-icon>
+      <fa-icon icon="bell"></fa-icon>
+    </mzd-icon>
     <div>
       <h1>Custom-card with Border</h1>
       <hr>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tempora dolor ullam exercitationem illum enim id maxime sunt eius, neque repellat corporis atque voluptatibus quasi nam necessitatibus odit commodi quisquam?</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tempora dolor ullam exercitationem illum enim id
+        maxime sunt eius, neque repellat corporis atque voluptatibus quasi nam necessitatibus odit commodi quisquam?</p>
     </div>
   </mzd-timeline-content>
 
   <!-- mzd-timeline-card mzd-timeline-border border warn color -->
   <mzd-timeline-content [border]="true" [color]="'warn'">
-    <mzd-icon><fa-icon icon="bell"></fa-icon></mzd-icon>
+    <mzd-icon>
+      <fa-icon icon="bell"></fa-icon>
+    </mzd-icon>
     <div>
       <h1>Custom-card with Border in warn color</h1>
       <hr>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tempora dolor ullam exercitationem illum enim id maxime sunt eius, neque repellat corporis atque voluptatibus quasi nam necessitatibus odit commodi quisquam?</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tempora dolor ullam exercitationem illum enim id
+        maxime sunt eius, neque repellat corporis atque voluptatibus quasi nam necessitatibus odit commodi quisquam?</p>
     </div>
   </mzd-timeline-content>
 
   <!-- mzd-timeline-border -->
   <mzd-timeline-content [card]="false" [border]="true">
-    <mzd-icon><fa-icon icon="envelope-open"></fa-icon></mzd-icon>
+    <mzd-icon>
+      <fa-icon icon="envelope-open"></fa-icon>
+    </mzd-icon>
     <div style="padding: 16px;">
       <h1>No-card with Border</h1>
       <hr>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tempora dolor ullam exercitationem illum enim id maxime sunt eius, neque repellat corporis atque voluptatibus quasi nam necessitatibus odit commodi quisquam?</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tempora dolor ullam exercitationem illum enim id
+        maxime sunt eius, neque repellat corporis atque voluptatibus quasi nam necessitatibus odit commodi quisquam?</p>
     </div>
   </mzd-timeline-content>
 
   <!-- mzd-timeline-border fixed to right side-->
   <mzd-timeline-content [card]="false" side='right'>
-    <mzd-icon><fa-icon icon="envelope-open"></fa-icon></mzd-icon>
+    <mzd-icon>
+      <fa-icon icon="envelope-open"></fa-icon>
+    </mzd-icon>
     <div style="padding: 16px;">
       <h1>No-card fixed to the right side</h1>
       <hr>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tempora dolor ullam exercitationem illum enim id maxime sunt eius, neque repellat corporis atque voluptatibus quasi nam necessitatibus odit commodi quisquam?</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tempora dolor ullam exercitationem illum enim id
+        maxime sunt eius, neque repellat corporis atque voluptatibus quasi nam necessitatibus odit commodi quisquam?</p>
     </div>
   </mzd-timeline-content>
 </mzd-timeline>

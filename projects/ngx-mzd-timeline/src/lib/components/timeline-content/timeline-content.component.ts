@@ -26,6 +26,10 @@ export class MzdTimelineContentComponent implements OnInit {
     this.elementRef.nativeElement.classList.toggle('no-alternate', value);
   }
 
+  set chat(value: boolean) {
+    this.elementRef.nativeElement.classList.toggle('chat', value);
+  }
+
   constructor(private elementRef: ElementRef) { }
 
   ngOnInit(): void { }
