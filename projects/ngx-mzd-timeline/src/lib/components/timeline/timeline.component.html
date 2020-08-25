@@ -1,9 +1,9 @@
-<div
-  class="mzd-timeline-line"
-  [ngClass]="{
+<div (window:resize)="onResize($event)"  [ngClass]="{
+    'mzd-timeline-line': !(chat && alternateSide && width > 599),
+    'mzd-timeline-chat': chat && alternateSide && width > 599,
     'no-alternate': !alternateSide,
     left: firstContentSide !== 'left',
-    right: firstContentSide !== 'right'
-  }"
-></div>
+    right: firstContentSide !== 'right',
+    chat:  chat && alternateSide && width > 599
+  }"></div>
 <ng-content></ng-content>

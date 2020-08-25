@@ -11,7 +11,7 @@ Forked by me to keep it up to date when I need it and to be able to flexible add
 
 ```typescript
 ...
-import { MzdTimelineModule } from 'ngx-mzd-timeline';
+import { MzdTimelineModule } from 'ngx-rend-timeline';
 
 @NgModule({
   ...

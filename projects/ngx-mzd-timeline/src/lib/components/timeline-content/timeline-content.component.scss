@@ -13,8 +13,8 @@ mzd-timeline-content {
     padding: 16px;
     border-radius: 4px;
     box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
-                0px 1px 1px 0px rgba(0, 0, 0, 0.14),
-                0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+      0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+      0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 
     // negate padding and shadow of mat-card if the parent itself is a card
     mat-card {
@@ -23,18 +23,18 @@ mzd-timeline-content {
     }
   }
 
-  
-      // if border needed
-      & .mzd-timeline-border {
-        border: 1px solid gray;
-        border-radius: 4px;
-      }
-  
+
+  // if border needed
+  & .mzd-timeline-border {
+    border: 1px solid gray;
+    border-radius: 4px;
+  }
+
 
   // no-alternate style
   &.no-alternate {
     width: 100%;
-    
+
     // content on the right
     &.content-right {
       left: 0;
@@ -139,12 +139,24 @@ mzd-timeline-content {
       right: 0;
       z-index: 1;
     }
+
+    &.chat {
+      left: calc(15% - 30px);
+      right: 0;
+      width: 85%;
+    }
   }
-  
+
   // content on the right side
   &.content-right {
     left: auto;
     right: -50%;
+
+    &.chat {
+      left: 30px;
+      right: 0;
+      width: 85%;
+    }
 
     // reposition circel for content on the right side
     &::after {
@@ -180,11 +192,12 @@ mzd-timeline-content {
     padding-left: 60px;
 
     &.no-alternate {
-      padding-left: 30Px;
+      padding-left: 30px;
     }
 
     // all circles are at the left side
-    &.content-left::after, &.content-right::after {
+    &.content-left::after,
+    &.content-right::after {
       left: 15px;
       right: auto;
     }
@@ -192,6 +205,7 @@ mzd-timeline-content {
     &.content-left {
       left: 0;
       right: auto;
+
       mzd-icon {
         left: 23px;
         right: auto;
@@ -199,7 +213,8 @@ mzd-timeline-content {
     }
 
     // all arrows are left facing
-    &.content-left::before, &.content-right::before {
+    &.content-left::before,
+    &.content-right::before {
       left: 30px;
       right: auto;
       border-width: 5px 10px 5px 20px;
@@ -210,6 +225,7 @@ mzd-timeline-content {
     &.content-right {
       left: 0;
       right: auto;
+
       mzd-icon {
         left: 23px;
         right: auto;

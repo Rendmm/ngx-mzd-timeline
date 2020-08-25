@@ -30,6 +30,16 @@ mzd-timeline {
     }
   }
 
+  // vertical lines on the right and left
+  & .mzd-timeline-chat {
+    left: 30px;
+    position: absolute;
+    width: calc(100% - 60px);
+    height: 100%;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+  }
+
   // xs devices
   @media screen and (max-width: 599px) {
 

@@ -1,16 +1,17 @@
-# ngx-rend-timeline
+# ngx-mzd-timeline
 
-Angular material theme supportedmazi1ds vertical timeline library for Angular applications. Forked and added some useful features.
+Angular material theme supported minimalist's vertical timeline library for Angular applications. 
+Forked by me to keep it up to date when I need it and to be able to flexible add updates. Will still post them to original Repo and of they're added  I close this.
 
 
 ## Getting Started
 
-1) run `npm install --save ngx-mzd-timeline`
+1) run `npm install --save ngx-rend-timeline`
 2) import `MzdTimelineModule` in your app module
 
 ```typescript
 ...
-import { MzdTimelineModule } from 'ngx-mzd-timeline';
+import { MzdTimelineModule } from 'ngx-rend-timeline';
 
 @NgModule({
   ...
@@ -53,7 +54,7 @@ export class AppModule { }
 
 Border around the content
 
-```xml
+```html
 <mzd-timeline>
   <mzd-icon><fa-icon icon="briefcase"></fa-icon></mzd-icon>
   <mzd-timeline-content [border]="true">
@@ -75,23 +76,9 @@ Border with material theme color
 </mzd-timeline>
 ```
 
-### Fixed Site
-
-If your timelines property alternateSide is true you can fix individual content like this:
-
-```html
-<mzd-timeline [alternateSide]="true">
-  <mzd-icon><fa-icon icon="briefcase"></fa-icon></mzd-icon>
-  <mzd-timeline-content side='right'>
-      Your HTML code or any angular component can be placed here.
-      Content will be displayed in a card.
-  </mzd-timeline-content>
-</mzd-timeline>
-```
-
 ### Other Examples
 
-Other examples can be found in the [app.component.html](https://github.com/rendmm/ngx-rend-timeline/blob/master/src/app/app.component.html) file.
+Other examples can be found in the [app.component.html](https://github.com/mazid1/ngx-mzd-timeline/blob/master/src/app/app.component.html) file.
 
 ## Angular Material Theme
 
@@ -99,7 +86,7 @@ The package supports angular material theme. In your own angular material theme:
 
 ```typescript
 @import '~@angular/material/theming';
-@import "~ngx-rend-timeline/src/mzd-timeline.theme.scss";
+@import "~ngx-mzd-timeline/src/mzd-timeline.theme.scss";
 
 ...
 
@@ -162,13 +149,19 @@ This library was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Code scaffolding
 
-Run `ng generate component component-name --project ngx-mzd-timeline` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngx-mzd-timeline`.
-> Note: Don't forget to add `--project ngx-mzd-timeline` or else it will be added to the default project in your `angular.json` file. 
+Run `ng generate component component-name --project ngx-mzd-timeline` to generate a new component inside the library. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngx-mzd-timeline`.
+> Note: Don't forget to add `--project ngx-mzd-timeline` or else it will be added to the default demo app. 
 
 ## Build
 
-Run `ng build ngx-mzd-timeline --prod` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run `ng build ngx-mzd-timeline --prod` to build the library project. The build artifacts will be stored in the `dist/` directory.
+Run `ng build` to build the demo app. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
 ## Running unit tests
 
-Run `ng test ngx-mzd-timeline` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `ng test ngx-mzd-timeline` to execute the unit tests of the library via [Karma](https://karma-runner.github.io).
+Run `ng test` to execute the unit tests of the demo app via [Karma](https://karma-runner.github.io).
+
+## Development server
+
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
